@@ -4,6 +4,10 @@ tt_content.wnraisenow_form {
     templateRootPaths {
         1730 = EXT:wn_raisenow/Resources/Private/Templates/
     }
+    settings {
+        # own .css or .scss (needs ws_scss) replaces the default, empty for none
+        stylesheet = EXT:wn_raisenow/Resources/Public/Css/raisenow.css
+    }
     dataProcessing {
         1730 = WebNomads\WnRaisenow\DataProcessing\DonationFormProcessor
         1730.as = raisenow

@@ -9,6 +9,7 @@ use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 use WebNomads\WnRaisenow\Configuration\TamaroConfigurationBuilder;
 use WebNomads\WnRaisenow\Domain\Repository\DonationFormRepository;
+use WebNomads\WnRaisenow\Frontend\StylesheetIncluder;
 
 /**
  * Provides the selected donation form to the content element template.
@@ -18,12 +19,14 @@ use WebNomads\WnRaisenow\Domain\Repository\DonationFormRepository;
  *   dataProcessing.10.as = raisenow
  *
  * The variable is null if no visible form with a valid widget ID is selected.
+ * settings.stylesheet of the content object is added to the page along with the widget.
  */
 final class DonationFormProcessor implements DataProcessorInterface
 {
     public function __construct(
         private readonly DonationFormRepository $repository,
         private readonly TamaroConfigurationBuilder $builder,
+        private readonly StylesheetIncluder $stylesheetIncluder,
     ) {}
 
     /**
@@ -64,6 +67,8 @@ final class DonationFormProcessor implements DataProcessorInterface
         if ($resultUrl !== '') {
             $settings['resultUrl'] = $resultUrl;
         }
+
+        $this->stylesheetIncluder->include((string)($contentObjectConfiguration['settings.']['stylesheet'] ?? ''));
 
         $processedData[$as] = [
             'form' => $form,

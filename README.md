@@ -109,6 +109,46 @@ Invalid JSON is ignored rather than breaking the form.
   to every site whose `csp.yaml` keeps `inheritDefault: true`; a site that
   defines its policy from scratch has to add these sources itself.
 
+## Styling
+
+The widget sits in a container `<div class="wn-raisenow">`. A default
+stylesheet gives that container a white background and 30 pixels of padding,
+so the form does not run up to the edge of the white area Tamaro draws. It is
+only added to pages that show a donation form.
+
+**Adjust the default** in your own CSS — its rule has zero specificity
+(`:where()`), so any selector of yours wins without `!important`:
+
+```css
+.wn-raisenow {
+    --wn-raisenow-padding: 40px;
+    --wn-raisenow-background: transparent;
+}
+```
+
+**Replace the default** with your own file, or switch it off:
+
+```typoscript
+# own stylesheet instead of the default
+tt_content.wnraisenow_form.settings.stylesheet = EXT:my_sitepackage/Resources/Public/Css/donation-form.css
+
+# SCSS, compiled by ws_scss
+tt_content.wnraisenow_form.settings.stylesheet = EXT:my_sitepackage/Resources/Private/Scss/donation-form.scss
+
+# no stylesheet at all
+tt_content.wnraisenow_form.settings.stylesheet =
+```
+
+SCSS needs the extension [ws_scss](https://extensions.typo3.org/extension/ws_scss).
+Without it a `.scss` file is skipped and a warning is logged, rather than a
+stylesheet the browser cannot read being linked. Options of ws_scss such as
+variables set under `plugin.tx_wsscss.variables` apply as usual.
+
+Tamaro's own elements carry classes like `.tamaro-widget`; styling them from
+the outside works, but RaiseNow may change that markup with any widget update.
+For colours and fonts, prefer the styling options of the widget configuration
+(see [Tamaro styling](https://docs.raisenow.com/elements/tamaro)).
+
 ## Templates
 
 The template can be replaced via TypoScript:

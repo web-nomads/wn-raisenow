@@ -1,0 +1,9 @@
+/*
+ * Default look of the donation form container.
+ * Zero specificity via :where(), any own rule wins without !important.
+ * Adjust via custom properties, e.g. .wn-raisenow { --wn-raisenow-padding: 40px; }
+ */
+:where(.wn-raisenow) {
+    padding: var(--wn-raisenow-padding, 30px);
+    background-color: var(--wn-raisenow-background, #fff);
+}

@@ -6,3 +6,4 @@ parameters:
     excludePaths:
         analyseAndScan:
             - .Build (?)
+            - Tests/Functional/Fixtures/Extensions

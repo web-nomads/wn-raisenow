@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-10-26
+
+### Added
+- **A stylesheet for the donation form, replaceable per site.** The container
+  around the widget now gets a white background and 30 pixels of padding by
+  default, so the form no longer runs up to the edge of the white area Tamaro
+  draws. The rule has zero specificity and reads its values from
+  `--wn-raisenow-padding` and `--wn-raisenow-background`, so a site's own CSS
+  overrides it without `!important`.
+- **`tt_content.wnraisenow_form.settings.stylesheet`** replaces the default with
+  an own `.css` or `.scss` file, or switches it off when empty. SCSS is
+  compiled by ws_scss; without that extension the file is skipped and a
+  warning logged. The stylesheet is only added to pages showing a form.
+
+### Changed
+- Unit tests bootstrap through the testing framework, which TYPO3 12's
+  PageRenderer needs for its constants.
+
 ## [1.0.2] - 2026-10-26
 
 ### Fixed
@@ -50,6 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Site set for TYPO3 13 and 14, static template for TYPO3 12.
 - Unit and functional tests, run against TYPO3 12.4, 13.4 and 14.3.
 
+[1.1.0]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/web-nomads/wn-raisenow/releases/tag/v1.0.0
