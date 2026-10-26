@@ -1,7 +1,7 @@
 {
     "name": "web-nomads/wn-raisenow",
     "type": "typo3-cms-extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "RaiseNow donation forms for TYPO3: configure Tamaro donation widgets in the backend - amounts, currencies, payment methods, purposes, thank-you page - and place them on any page as a content element.",
     "keywords": ["TYPO3", "CMS", "RaiseNow", "Tamaro", "donation", "fundraising", "TWINT"],
     "homepage": "https://github.com/web-nomads/wn-raisenow",

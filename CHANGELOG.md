@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2026-10-26
+
+### Fixed
+- **The widget stayed empty on sites enforcing a Content Security Policy.**
+  TYPO3's default frontend policy allows scripts from the site's own host only,
+  so the browser refused to load Tamaro from tamaro.raisenow.com and the
+  container remained blank. The extension now ships a policy extension for the
+  frontend: scripts from tamaro.raisenow.com and cdn.jsdelivr.net, styles and
+  fonts from assets.raisenow.io, requests to RaiseNow, and frames of RaiseNow,
+  Datatrans, PayPal and Stripe. Verified in the browser against a real widget
+  without any remaining violation.
+
 ## [1.0.1] - 2026-10-26
 
 ### Changed
@@ -38,5 +50,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Site set for TYPO3 13 and 14, static template for TYPO3 12.
 - Unit and functional tests, run against TYPO3 12.4, 13.4 and 14.3.
 
+[1.0.2]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/web-nomads/wn-raisenow/releases/tag/v1.0.0

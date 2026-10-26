@@ -102,11 +102,12 @@ Invalid JSON is ignored rather than breaking the form.
   `#widgetdebug` to the page URL opens Tamaro's debug panel.
 - **Payment methods** only appear if they are activated for your RaiseNow
   account, whatever is selected here.
-- **Content Security Policy:** the widget loads scripts from
-  `tamaro.raisenow.com` and `cdn.jsdelivr.net` and talks to RaiseNow and the
-  payment providers (Datatrans, PayPal, Stripe, TWINT). A site with a strict
-  frontend CSP has to allow these hosts; the exact list depends on the payment
-  methods in use.
+- **Content Security Policy:** the extension extends the frontend policy with
+  what the widget needs — scripts from `tamaro.raisenow.com` and
+  `cdn.jsdelivr.net`, styles and fonts from `assets.raisenow.io`, requests to
+  RaiseNow, and frames of RaiseNow, Datatrans, PayPal and Stripe. This applies
+  to every site whose `csp.yaml` keeps `inheritDefault: true`; a site that
+  defines its policy from scratch has to add these sources itself.
 
 ## Templates
 
