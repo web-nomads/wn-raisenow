@@ -6,7 +6,15 @@ purposes, thank-you page — and place it on any page as a content element. The
 form itself is RaiseNow's Tamaro widget, so payments, receipts and reporting run
 through RaiseNow as before.
 
-Works with TYPO3 12.4, 13.4 and 14.3.
+## Requirements
+
+| TYPO3 | PHP |
+|---|---|
+| 12.4 LTS | 8.1 – 8.5 |
+| 13.4 LTS | 8.2 – 8.5 |
+| 14.3 | 8.2 – 8.5 |
+
+Composer-based and classic (non-Composer) installations are both supported.
 
 ## What you need from RaiseNow
 
@@ -24,10 +32,16 @@ Tamaro widgets and are not covered by this extension.
 
 ## Installation
 
+**With Composer:**
+
 ```bash
 composer require web-nomads/wn-raisenow
 vendor/bin/typo3 extension:setup
 ```
+
+**Without Composer (classic mode):** install *wn_raisenow* from the TYPO3
+Extension Repository in the Extension Manager, or upload the archive there.
+Activating it creates the database tables.
 
 On sites using `typo3/cms-fluid-styled-content` — through its site set or its
 static template — nothing else needs to be included: the extension adds its

@@ -13,25 +13,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - typo3: '12.4'
+        typo3: ['12.4', '13.4', '14.3']
+        php: ['8.1', '8.2', '8.3', '8.4', '8.5']
+        exclude:
+          # TYPO3 13 and 14 require PHP 8.2
+          - typo3: '13.4'
             php: '8.1'
-            testing-framework: '^8.2'
-          - typo3: '12.4'
-            php: '8.3'
-            testing-framework: '^8.2'
-          - typo3: '13.4'
-            php: '8.2'
-            testing-framework: '^8.2'
-          - typo3: '13.4'
-            php: '8.4'
-            testing-framework: '^8.2'
           - typo3: '14.3'
-            php: '8.2'
-            testing-framework: '^9.3'
-          - typo3: '14.3'
-            php: '8.4'
-            testing-framework: '^9.3'
+            php: '8.1'
 
     steps:
       - uses: actions/checkout@v4
@@ -55,14 +44,14 @@ jobs:
           --with "typo3/cms-fluid:^${{ matrix.typo3 }}"
           --with "typo3/cms-frontend:^${{ matrix.typo3 }}"
           --with "typo3/cms-fluid-styled-content:^${{ matrix.typo3 }}"
-          --with "typo3/testing-framework:${{ matrix.testing-framework }}"
+          --with "typo3/testing-framework:${{ matrix.typo3 == '14.3' && '^9.3' || '^8.2' }}"
 
       - name: Coding standards
-        if: matrix.typo3 == '14.3'
+        if: matrix.typo3 == '14.3' && matrix.php == '8.3'
         run: composer cs:check
 
       - name: PHPStan
-        if: matrix.typo3 == '14.3'
+        if: matrix.typo3 == '14.3' && matrix.php == '8.3'
         run: composer stan
 
       - name: Unit tests
