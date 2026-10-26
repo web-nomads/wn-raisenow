@@ -7,9 +7,10 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Marcel Marty',
     'author_email' => 'contact@marcelmarty.ch',
     'state' => 'stable',
-    'version' => '1.1.0',
+    'version' => '1.1.1',
     'constraints' => [
         'depends' => [
+            'php' => '8.1.0-8.5.99',
             'typo3' => '12.4.0-14.3.99',
             'backend' => '12.4.0-14.3.99',
             'fluid' => '12.4.0-14.3.99',
@@ -18,6 +19,11 @@ $EM_CONF[$_EXTKEY] = [
         'conflicts' => [],
         'suggests' => [
             'fluid_styled_content' => '12.4.0-14.3.99',
+        ],
+    ],
+    'autoload' => [
+        'psr-4' => [
+            'WebNomads\\WnRaisenow\\' => 'Classes/',
         ],
     ],
 ];

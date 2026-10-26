@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] - 2026-10-26
+
+### Changed
+- **Legacy installations.** `ext_emconf.php` now states the PSR-4 autoloading
+  and the supported PHP range (8.1 to 8.5), so a classic-mode installation from
+  the TER archive finds the classes without Composer and the Extension Manager
+  shows the PHP requirement.
+- Tested on every supported combination: TYPO3 12.4 with PHP 8.1 to 8.5, TYPO3
+  13.4 and 14.3 with PHP 8.2 to 8.5, each in a Composer and a classic-mode
+  installation.
+
 ## [1.1.0] - 2026-10-26
 
 ### Added
@@ -68,6 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Site set for TYPO3 13 and 14, static template for TYPO3 12.
 - Unit and functional tests, run against TYPO3 12.4, 13.4 and 14.3.
 
+[1.1.1]: https://github.com/web-nomads/wn-raisenow/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.0...v1.0.1
