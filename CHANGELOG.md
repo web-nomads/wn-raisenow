@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-10-26
+
+### Changed
+- **The content element works without including any TypoScript.** On a site
+  using fluid_styled_content, placing a donation form without adding the site
+  set or static template ended in "has no rendering definition". The extension
+  now registers its rendering as default content rendering, so TYPO3 appends it
+  wherever fluid_styled_content is included — through its site set or its
+  static template. The site set and static template remain for sites rendering
+  content with another library.
+
 ## [1.0.0] - 2026-10-26
 
 ### Added
@@ -27,4 +38,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Site set for TYPO3 13 and 14, static template for TYPO3 12.
 - Unit and functional tests, run against TYPO3 12.4, 13.4 and 14.3.
 
+[1.0.1]: https://github.com/web-nomads/wn-raisenow/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/web-nomads/wn-raisenow/releases/tag/v1.0.0

@@ -29,16 +29,19 @@ composer require web-nomads/wn-raisenow
 vendor/bin/typo3 extension:setup
 ```
 
-Then include the TypoScript:
+On sites using `typo3/cms-fluid-styled-content` — through its site set or its
+static template — nothing else needs to be included: the extension adds its
+TypoScript right after the content rendering of fluid_styled_content, the way
+felogin and form do.
+
+Sites rendering content with another library need to include the TypoScript
+themselves, and that library has to define `lib.contentElement` with a
+`Default` layout:
 
 - **TYPO3 13 and 14:** add the site set *RaiseNow donation forms*
-  (`web-nomads/raisenow`) to your site.
+  (`web-nomads/raisenow`) to the site.
 - **TYPO3 12**, or sites without site sets: include the static template
   *RaiseNow donation forms* in the TypoScript record.
-
-The content element is rendered with `lib.contentElement`, which
-`typo3/cms-fluid-styled-content` provides. Sites using another content element
-library work as long as it defines `lib.contentElement` with a `Default` layout.
 
 ## Usage
 

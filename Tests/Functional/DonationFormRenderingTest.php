@@ -24,11 +24,11 @@ final class DonationFormRenderingTest extends FunctionalTestCase
         parent::setUp();
         $this->writeSite();
         $this->importCSVDataSet(__DIR__ . '/Fixtures/DonationForms.csv');
+        // no TypoScript of this extension: fluid_styled_content alone has to pull it in
         $this->setUpFrontendRootPage(1, [
             'constants' => ['EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'],
             'setup' => [
                 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript',
-                'EXT:wn_raisenow/Configuration/TypoScript/setup.typoscript',
                 'EXT:wn_raisenow/Tests/Functional/Fixtures/page.typoscript',
             ],
         ]);
