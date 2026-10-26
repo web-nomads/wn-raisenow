@@ -1,0 +1,4 @@
+name: web-nomads/raisenow
+label: 'RaiseNow donation forms'
+optionalDependencies:
+  - typo3/fluid-styled-content

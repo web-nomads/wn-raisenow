@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:wn_raisenow/Resources/Private/Language/locallang_db.xlf" product-name="wn_raisenow">
+        <header/>
+        <body>
+            <trans-unit id="tx_wnraisenow_form" resname="tx_wnraisenow_form">
+                <source>Donation form</source>
+                <target>Spendenformular</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.inherit" resname="tx_wnraisenow_form.inherit">
+                <source>Use widget configuration</source>
+                <target>Widget-Konfiguration verwenden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.yes" resname="tx_wnraisenow_form.yes">
+                <source>Yes</source>
+                <target>Ja</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.no" resname="tx_wnraisenow_form.no">
+                <source>No</source>
+                <target>Nein</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.title" resname="tx_wnraisenow_form.title">
+                <source>Internal title</source>
+                <target>Interner Titel</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.title.description" resname="tx_wnraisenow_form.title.description">
+                <source>Only shown in the backend, e.g. "Christmas campaign 2026".</source>
+                <target>Nur im Backend sichtbar, z. B. «Weihnachtsaktion 2026».</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.widget_id" resname="tx_wnraisenow_form.widget_id">
+                <source>Widget ID</source>
+                <target>Widget-ID</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.widget_id.description" resname="tx_wnraisenow_form.widget_id.description">
+                <source>The Tamaro widget ID from your RaiseNow onboarding e-mail or RaiseNow Hub ("Tamaro donation widgets" &gt; "configuration name"), e.g. "my-organisation-de". It is the part between tamaro.raisenow.com/ and /latest/widget.js.</source>
+                <target>Die Tamaro-Widget-ID aus der Onboarding-E-Mail von RaiseNow oder aus RaiseNow Hub («Tamaro Spendenwidgets» &gt; «Name der Konfiguration»), z. B. «meine-organisation-de». Es ist der Teil zwischen tamaro.raisenow.com/ und /latest/widget.js.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.widget_version" resname="tx_wnraisenow_form.widget_version">
+                <source>Widget version</source>
+                <target>Widget-Version</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.widget_version.description" resname="tx_wnraisenow_form.widget_version.description">
+                <source>"latest" follows the version RaiseNow has published for this widget. Enter a fixed version only if RaiseNow asks you to.</source>
+                <target>«latest» folgt der Version, die RaiseNow für dieses Widget veröffentlicht hat. Eine feste Version nur eintragen, wenn RaiseNow dazu rät.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language" resname="tx_wnraisenow_form.language">
+                <source>Language</source>
+                <target>Sprache</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.description" resname="tx_wnraisenow_form.language.description">
+                <source>Automatic uses the language of the page, as long as Tamaro supports it.</source>
+                <target>Automatisch verwendet die Sprache der Seite, sofern Tamaro sie unterstützt.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.auto" resname="tx_wnraisenow_form.language.auto">
+                <source>Automatic (page language)</source>
+                <target>Automatisch (Sprache der Seite)</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.de" resname="tx_wnraisenow_form.language.de">
+                <source>German</source>
+                <target>Deutsch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.en" resname="tx_wnraisenow_form.language.en">
+                <source>English</source>
+                <target>Englisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.fr" resname="tx_wnraisenow_form.language.fr">
+                <source>French</source>
+                <target>Französisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.it" resname="tx_wnraisenow_form.language.it">
+                <source>Italian</source>
+                <target>Italienisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.rm" resname="tx_wnraisenow_form.language.rm">
+                <source>Romansh</source>
+                <target>Rätoromanisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.es" resname="tx_wnraisenow_form.language.es">
+                <source>Spanish</source>
+                <target>Spanisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.nl" resname="tx_wnraisenow_form.language.nl">
+                <source>Dutch</source>
+                <target>Niederländisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.hu" resname="tx_wnraisenow_form.language.hu">
+                <source>Hungarian</source>
+                <target>Ungarisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.language.ro" resname="tx_wnraisenow_form.language.ro">
+                <source>Romanian</source>
+                <target>Rumänisch</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.test_mode" resname="tx_wnraisenow_form.test_mode">
+                <source>Force test mode</source>
+                <target>Testmodus erzwingen</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.test_mode.description" resname="tx_wnraisenow_form.test_mode.description">
+                <source>No real money flows; the widget shows an orange test bar. Leave off on the live site: whether the widget is in production is decided by RaiseNow.</source>
+                <target>Es fliesst kein echtes Geld; das Widget zeigt einen orangen Testbalken. Auf der Live-Site ausgeschaltet lassen: Ob das Widget produktiv ist, legt RaiseNow fest.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.multi.description" resname="tx_wnraisenow_form.multi.description">
+                <source>Nothing selected: the widget configuration applies.</source>
+                <target>Nichts ausgewählt: Es gilt die Widget-Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.currencies" resname="tx_wnraisenow_form.currencies">
+                <source>Currencies</source>
+                <target>Währungen</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.currency.chf" resname="tx_wnraisenow_form.currency.chf">
+                <source>CHF</source>
+                <target>CHF</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.currency.eur" resname="tx_wnraisenow_form.currency.eur">
+                <source>EUR</source>
+                <target>EUR</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.currency.usd" resname="tx_wnraisenow_form.currency.usd">
+                <source>USD</source>
+                <target>USD</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_currency" resname="tx_wnraisenow_form.default_currency">
+                <source>Preselected currency</source>
+                <target>Vorausgewählte Währung</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_types" resname="tx_wnraisenow_form.payment_types">
+                <source>Payment types</source>
+                <target>Zahlungsarten</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_type.onetime" resname="tx_wnraisenow_form.payment_type.onetime">
+                <source>One-off donation</source>
+                <target>Einmalige Spende</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_type.recurring" resname="tx_wnraisenow_form.payment_type.recurring">
+                <source>Recurring donation</source>
+                <target>Wiederkehrende Spende</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_payment_type" resname="tx_wnraisenow_form.default_payment_type">
+                <source>Preselected payment type</source>
+                <target>Vorausgewählte Zahlungsart</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.recurring_intervals" resname="tx_wnraisenow_form.recurring_intervals">
+                <source>Intervals for recurring donations</source>
+                <target>Intervalle für wiederkehrende Spenden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.interval.monthly" resname="tx_wnraisenow_form.interval.monthly">
+                <source>Monthly</source>
+                <target>Monatlich</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.interval.quarterly" resname="tx_wnraisenow_form.interval.quarterly">
+                <source>Quarterly</source>
+                <target>Vierteljährlich</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.interval.semestral" resname="tx_wnraisenow_form.interval.semestral">
+                <source>Half-yearly</source>
+                <target>Halbjährlich</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.interval.yearly" resname="tx_wnraisenow_form.interval.yearly">
+                <source>Yearly</source>
+                <target>Jährlich</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_recurring_interval" resname="tx_wnraisenow_form.default_recurring_interval">
+                <source>Preselected interval</source>
+                <target>Vorausgewähltes Intervall</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.highlight_recurring" resname="tx_wnraisenow_form.highlight_recurring">
+                <source>Highlight recurring donations</source>
+                <target>Wiederkehrende Spenden hervorheben</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.amounts_onetime" resname="tx_wnraisenow_form.amounts_onetime">
+                <source>Amounts for one-off donations</source>
+                <target>Beträge für einmalige Spenden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.amounts_recurring" resname="tx_wnraisenow_form.amounts_recurring">
+                <source>Amounts for recurring donations</source>
+                <target>Beträge für wiederkehrende Spenden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.amounts.description" resname="tx_wnraisenow_form.amounts.description">
+                <source>Comma-separated, e.g. "20, 50, 100". If only one of the two fields is filled in, it applies to both payment types. Empty: the widget configuration applies.</source>
+                <target>Kommagetrennt, z. B. «20, 50, 100». Ist nur eines der beiden Felder ausgefüllt, gilt es für beide Zahlungsarten. Leer: Es gilt die Widget-Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_amount" resname="tx_wnraisenow_form.default_amount">
+                <source>Preselected amount</source>
+                <target>Vorausgewählter Betrag</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.zero.description" resname="tx_wnraisenow_form.zero.description">
+                <source>0: the widget configuration applies.</source>
+                <target>0: Es gilt die Widget-Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.allow_custom_amount" resname="tx_wnraisenow_form.allow_custom_amount">
+                <source>Allow a custom amount</source>
+                <target>Freien Betrag erlauben</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.minimum_custom_amount" resname="tx_wnraisenow_form.minimum_custom_amount">
+                <source>Minimum custom amount</source>
+                <target>Minimaler freier Betrag</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.maximum_custom_amount" resname="tx_wnraisenow_form.maximum_custom_amount">
+                <source>Maximum custom amount</source>
+                <target>Maximaler freier Betrag</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_methods" resname="tx_wnraisenow_form.payment_methods">
+                <source>Payment methods</source>
+                <target>Zahlungsmethoden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_methods.description" resname="tx_wnraisenow_form.payment_methods.description">
+                <source>Shown in the order selected here. Only methods activated for your RaiseNow account appear. Nothing selected: the widget configuration applies.</source>
+                <target>Erscheinen in der hier gewählten Reihenfolge. Angezeigt werden nur Methoden, die für Ihr RaiseNow-Konto aktiviert sind. Nichts ausgewählt: Es gilt die Widget-Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.card" resname="tx_wnraisenow_form.payment_method.card">
+                <source>Credit and debit card</source>
+                <target>Kredit- und Debitkarte</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.twint" resname="tx_wnraisenow_form.payment_method.twint">
+                <source>TWINT</source>
+                <target>TWINT</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.pfc" resname="tx_wnraisenow_form.payment_method.pfc">
+                <source>PostFinance Card</source>
+                <target>PostFinance Card</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.pef" resname="tx_wnraisenow_form.payment_method.pef">
+                <source>PostFinance E-Finance</source>
+                <target>PostFinance E-Finance</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.paypal" resname="tx_wnraisenow_form.payment_method.paypal">
+                <source>PayPal</source>
+                <target>PayPal</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.apple_pay" resname="tx_wnraisenow_form.payment_method.apple_pay">
+                <source>Apple Pay</source>
+                <target>Apple Pay</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.google_pay" resname="tx_wnraisenow_form.payment_method.google_pay">
+                <source>Google Pay</source>
+                <target>Google Pay</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.chqr" resname="tx_wnraisenow_form.payment_method.chqr">
+                <source>QR bill</source>
+                <target>QR-Rechnung</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.direct_debit" resname="tx_wnraisenow_form.payment_method.direct_debit">
+                <source>Direct debit (LSV/Debit Direct)</source>
+                <target>Lastschrift (LSV/Debit Direct)</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.sod" resname="tx_wnraisenow_form.payment_method.sod">
+                <source>SEPA direct debit (one-off)</source>
+                <target>SEPA-Lastschrift (einmalig)</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.payment_method.sepa_dd" resname="tx_wnraisenow_form.payment_method.sepa_dd">
+                <source>SEPA direct debit</source>
+                <target>SEPA-Lastschrift</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_payment_method" resname="tx_wnraisenow_form.default_payment_method">
+                <source>Preselected payment method</source>
+                <target>Vorausgewählte Zahlungsmethode</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.purposes" resname="tx_wnraisenow_form.purposes">
+                <source>Donation purposes</source>
+                <target>Spendenzwecke</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.purposes.description" resname="tx_wnraisenow_form.purposes.description">
+                <source>The donor chooses one of these purposes. None: the purposes of the widget configuration apply.</source>
+                <target>Die spendende Person wählt einen dieser Zwecke. Keine: Es gelten die Zwecke der Widget-Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_purpose" resname="tx_wnraisenow_form.default_purpose">
+                <source>Preselected purpose</source>
+                <target>Vorausgewählter Zweck</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.default_purpose.description" resname="tx_wnraisenow_form.default_purpose.description">
+                <source>Key of one of the purposes above, e.g. "p1".</source>
+                <target>Schlüssel eines der Zwecke oben, z. B. «p1».</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.result_page" resname="tx_wnraisenow_form.result_page">
+                <source>Thank-you page</source>
+                <target>Dankesseite</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.result_page.description" resname="tx_wnraisenow_form.result_page.description">
+                <source>Optional. After the payment, the donor is sent to this page instead of seeing the result inside the widget. Payment ID and status are appended as URL parameters (epms_payment_uuid, epms_payment_status, ...).</source>
+                <target>Optional. Nach der Zahlung wird die spendende Person auf diese Seite geleitet, statt das Ergebnis im Widget zu sehen. Zahlungs-ID und Status werden als URL-Parameter angehängt (epms_payment_uuid, epms_payment_status, …).</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.additional_config" resname="tx_wnraisenow_form.additional_config">
+                <source>Additional Tamaro configuration (JSON)</source>
+                <target>Zusätzliche Tamaro-Konfiguration (JSON)</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.additional_config.description" resname="tx_wnraisenow_form.additional_config.description">
+                <source>For experts: a JSON object with further runWidget options, see docs.raisenow.com. Top-level keys replace the values from the fields above. Invalid JSON is ignored.</source>
+                <target>Für Fachleute: ein JSON-Objekt mit weiteren runWidget-Optionen, siehe docs.raisenow.com. Schlüssel der obersten Ebene ersetzen die Werte aus den Feldern oben. Ungültiges JSON wird ignoriert.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.palette.widget" resname="tx_wnraisenow_form.palette.widget">
+                <source>Tamaro widget</source>
+                <target>Tamaro-Widget</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.palette.currency" resname="tx_wnraisenow_form.palette.currency">
+                <source>Currency</source>
+                <target>Währung</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.palette.payment_type" resname="tx_wnraisenow_form.palette.payment_type">
+                <source>One-off and recurring</source>
+                <target>Einmalig und wiederkehrend</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.palette.amounts" resname="tx_wnraisenow_form.palette.amounts">
+                <source>Amounts</source>
+                <target>Beträge</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.tab.general" resname="tx_wnraisenow_form.tab.general">
+                <source>Widget</source>
+                <target>Widget</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.tab.amounts" resname="tx_wnraisenow_form.tab.amounts">
+                <source>Amounts</source>
+                <target>Beträge</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.tab.payment_methods" resname="tx_wnraisenow_form.tab.payment_methods">
+                <source>Payment methods</source>
+                <target>Zahlungsmethoden</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.tab.purposes" resname="tx_wnraisenow_form.tab.purposes">
+                <source>Purposes</source>
+                <target>Zwecke</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_form.tab.advanced" resname="tx_wnraisenow_form.tab.advanced">
+                <source>Advanced</source>
+                <target>Erweitert</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose" resname="tx_wnraisenow_purpose">
+                <source>Donation purpose</source>
+                <target>Spendenzweck</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.identifier" resname="tx_wnraisenow_purpose.identifier">
+                <source>Key</source>
+                <target>Schlüssel</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.identifier.description" resname="tx_wnraisenow_purpose.identifier.description">
+                <source>Technical key passed to RaiseNow, e.g. "p1". Use the keys agreed with RaiseNow if your reporting relies on them.</source>
+                <target>Technischer Schlüssel, der an RaiseNow übergeben wird, z. B. «p1». Die mit RaiseNow vereinbarten Schlüssel verwenden, falls Auswertungen darauf beruhen.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.label" resname="tx_wnraisenow_purpose.label">
+                <source>Label</source>
+                <target>Bezeichnung</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.label.description" resname="tx_wnraisenow_purpose.label.description">
+                <source>Shown to the donor. Translate the record for other languages.</source>
+                <target>Wird der spendenden Person angezeigt. Für andere Sprachen den Datensatz übersetzen.</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.campaign_id" resname="tx_wnraisenow_purpose.campaign_id">
+                <source>Campaign ID</source>
+                <target>Kampagnen-ID</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.campaign_id.description" resname="tx_wnraisenow_purpose.campaign_id.description">
+                <source>Optional. Stored with the donation in RaiseNow (stored_campaign_id).</source>
+                <target>Optional. Wird mit der Spende in RaiseNow gespeichert (stored_campaign_id).</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.campaign_subid" resname="tx_wnraisenow_purpose.campaign_subid">
+                <source>Campaign sub-ID</source>
+                <target>Kampagnen-Sub-ID</target>
+            </trans-unit>
+            <trans-unit id="tx_wnraisenow_purpose.palette.campaign" resname="tx_wnraisenow_purpose.palette.campaign">
+                <source>Campaign</source>
+                <target>Kampagne</target>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.wnraisenow_form" resname="tt_content.CType.wnraisenow_form">
+                <source>RaiseNow donation form</source>
+                <target>RaiseNow-Spendenformular</target>
+            </trans-unit>
+            <trans-unit id="tt_content.CType.wnraisenow_form.description" resname="tt_content.CType.wnraisenow_form.description">
+                <source>Shows a donation form configured as a RaiseNow Tamaro widget.</source>
+                <target>Zeigt ein Spendenformular als RaiseNow-Tamaro-Widget an.</target>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_wnraisenow_form" resname="tt_content.tx_wnraisenow_form">
+                <source>Donation form</source>
+                <target>Spendenformular</target>
+            </trans-unit>
+            <trans-unit id="tt_content.tx_wnraisenow_form.description" resname="tt_content.tx_wnraisenow_form.description">
+                <source>Donation form records are created in a folder (list module). Only one donation form per page can be shown.</source>
+                <target>Spendenformular-Datensätze werden in einem Ordner angelegt (Modul Liste). Pro Seite kann nur ein Spendenformular angezeigt werden.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

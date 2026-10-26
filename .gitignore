@@ -1,0 +1,27 @@
+# Nothing in here is part of the extension. It is either built from what is,
+# or it belongs to one machine rather than to the project.
+
+# Dependencies and test scaffolding, restored by Composer
+/.Build/
+/vendor/
+# A library states ranges and resolves them per project; a lock file here would
+# only describe the machine that last ran composer.
+/composer.lock
+
+# Caches
+/.phpunit.cache/
+
+# Release archives built by Build/Scripts/release.sh
+/*.zip
+
+# Stray tooling artefacts
+__pycache__/
+*.pyc
+
+# Editor and operating system leftovers
+/.idea/
+/.vscode/
+*.orig
+*.bak
+.DS_Store
+Thumbs.db

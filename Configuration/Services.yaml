@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  WebNomads\WnRaisenow\:
+    resource: '../Classes/*'
+
+  # instantiated by ContentDataProcessor via GeneralUtility::makeInstance()
+  WebNomads\WnRaisenow\DataProcessing\DonationFormProcessor:
+    public: true

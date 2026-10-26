@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:if condition="{raisenow}">
+        <f:asset.script identifier="wn-raisenow" src="EXT:wn_raisenow/Resources/Public/JavaScript/tamaro.js" defer="1" />
+        <div id="wn-raisenow-{data.uid}" class="wn-raisenow rnw-widget-container" data-wn-raisenow="{raisenow.settings}"></div>
+        <noscript>
+            <p class="wn-raisenow__noscript"><f:translate key="LLL:EXT:wn_raisenow/Resources/Private/Language/locallang.xlf:noscript" /></p>
+        </noscript>
+    </f:if>
+</f:section>
+</html>

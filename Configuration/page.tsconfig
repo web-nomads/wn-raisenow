@@ -1,0 +1,14 @@
+# TYPO3 13+ builds the wizard entry from the TCA select item
+[compatVersion("13.0") == false]
+    mod.wizards.newContentElement.wizardItems.plugins {
+        elements.wnraisenow_form {
+            iconIdentifier = wn-raisenow-content
+            title = LLL:EXT:wn_raisenow/Resources/Private/Language/locallang_db.xlf:tt_content.CType.wnraisenow_form
+            description = LLL:EXT:wn_raisenow/Resources/Private/Language/locallang_db.xlf:tt_content.CType.wnraisenow_form.description
+            tt_content_defValues {
+                CType = wnraisenow_form
+            }
+        }
+        show := addToList(wnraisenow_form)
+    }
+[END]

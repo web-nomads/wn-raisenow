@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+
+jobs:
+  tests:
+    name: TYPO3 ${{ matrix.typo3 }} / PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - typo3: '12.4'
+            php: '8.1'
+            testing-framework: '^8.2'
+          - typo3: '12.4'
+            php: '8.3'
+            testing-framework: '^8.2'
+          - typo3: '13.4'
+            php: '8.2'
+            testing-framework: '^8.2'
+          - typo3: '13.4'
+            php: '8.4'
+            testing-framework: '^8.2'
+          - typo3: '14.3'
+            php: '8.2'
+            testing-framework: '^9.3'
+          - typo3: '14.3'
+            php: '8.4'
+            testing-framework: '^9.3'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: dom, intl, json, mbstring, pdo_sqlite
+          coverage: none
+
+      # public 12.4 releases all carry advisories since free support ended
+      - name: Allow TYPO3 12.4 for testing
+        if: matrix.typo3 == '12.4'
+        run: composer config policy.advisories.block false
+
+      - name: Install TYPO3 ${{ matrix.typo3 }}
+        run: >
+          composer update --no-interaction --no-progress -W
+          --with "typo3/cms-core:^${{ matrix.typo3 }}"
+          --with "typo3/cms-backend:^${{ matrix.typo3 }}"
+          --with "typo3/cms-fluid:^${{ matrix.typo3 }}"
+          --with "typo3/cms-frontend:^${{ matrix.typo3 }}"
+          --with "typo3/cms-fluid-styled-content:^${{ matrix.typo3 }}"
+          --with "typo3/testing-framework:${{ matrix.testing-framework }}"
+
+      - name: Coding standards
+        if: matrix.typo3 == '14.3'
+        run: composer cs:check
+
+      - name: PHPStan
+        if: matrix.typo3 == '14.3'
+        run: composer stan
+
+      - name: Unit tests
+        run: composer test:unit
+
+      - name: Functional tests
+        run: composer test:functional

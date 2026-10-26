@@ -1,0 +1,23 @@
+"pages"
+,"uid","pid","title","slug","doktype","sys_language_uid","l10n_parent"
+,1,0,"Spenden","/",1,0,0
+,1001,0,"Donate","/",1,1,1
+,2,1,"Formulare","/formulare",254,0,0
+,3,1,"Versteckt","/versteckt",1,0,0
+"tt_content"
+,"uid","pid","CType","header","tx_wnraisenow_form","sys_language_uid","l18n_parent","colPos"
+,1,1,"wnraisenow_form","Jetzt spenden","1",0,0,0
+,2,1,"wnraisenow_form","Donate now","1",1,1,0
+,3,3,"wnraisenow_form","Verstecktes Formular","3",0,0,0
+"tx_wnraisenow_form"
+,"uid","pid","title","widget_id","widget_version","language","test_mode","currencies","default_currency","payment_types","amounts_onetime","amounts_recurring","default_amount","allow_custom_amount","payment_methods","default_purpose","result_page","sys_language_uid","l10n_parent","hidden"
+,1,2,"Allgemeine Spende","my-org-de","latest","",1,"chf","chf","onetime,recurring","20, 50, 100","10, 20",50,"1","twint,card","p1","https://example.org/danke",0,0,0
+,2,2,"General donation","my-org-de","latest","",1,"chf","chf","onetime,recurring","20, 50, 100","10, 20",50,"1","twint,card","p1","https://example.org/thanks",1,1,0
+,3,2,"Versteckt","my-org-de","latest","",0,"","","","","",0,"","","","",0,0,1
+"tx_wnraisenow_purpose"
+,"uid","pid","form","identifier","label","campaign_id","campaign_subid","sorting","sys_language_uid","l10n_parent","hidden"
+,1,2,1,"p1","Wo am nötigsten","C-100","",1,0,0,0
+,2,2,1,"p2","Nothilfe","","",2,0,0,0
+,3,2,1,"p3","Ausgeblendet","","",3,0,0,1
+,4,2,2,"p1","Where it is needed most","C-100","",1,1,1,0
+,5,2,2,"p2","Emergency relief","","",2,1,2,0

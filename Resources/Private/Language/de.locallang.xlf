@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="EXT:wn_raisenow/Resources/Private/Language/locallang.xlf" product-name="wn_raisenow">
+        <header/>
+        <body>
+            <trans-unit id="noscript" resname="noscript">
+                <source>Please enable JavaScript to use the donation form.</source>
+                <target>Bitte aktivieren Sie JavaScript, um das Spendenformular zu verwenden.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
